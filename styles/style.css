@@ -68,8 +68,10 @@ header {
   gap: 10px;
 }
 
-.logo-container img.logo {
-  max-height: 80px;
+.logo-container img.logo,
+.logo-header {
+  max-height: 70px;
+  width: auto;
 }
 
 .logo-container h1 {
@@ -132,6 +134,27 @@ main .contenido-flex section {
   max-width: 280px;
   border-radius: 8px;
   flex-shrink: 0;
+}
+
+/* -------------------------------
+   CARRUSEL INDEX
+-------------------------------- */
+.carousel-item img {
+  max-height: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+.carousel-caption h5 {
+  color: #fff;
+  font-family: "Titan One", cursive;
+  font-size: 1.3rem;
 }
 
 /* -------------------------------
@@ -428,6 +451,10 @@ footer a:hover {
 
   .footer-formulario input[type="email"] { max-width: 100%; }
   .footer-formulario .enlace-boton { width: 100%; text-align: center; }
+
+  .carousel-item img {
+    max-height: 300px;
+  }
 }
 
 @media (max-width: 768px) {
