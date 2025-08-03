@@ -1,0 +1,8 @@
+// scss/components/_buttons.scss
+
+@use '../utils/variables' as v;
+@use '../utils/mixins' as m;
+
+.btn-custom {
+  @include m.button-style(v.$primary-color, v.$text-light);
+}

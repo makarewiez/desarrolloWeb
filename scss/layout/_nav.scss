@@ -1,0 +1,30 @@
+@use '../utils/variables' as v;
+
+nav {
+  width: 100%;
+  background-color: v.$primary-color;
+  display: flex;
+  justify-content: center;
+  padding: 15px 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: v.$max-width;
+  width: 100%;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 8px;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid white;
+}

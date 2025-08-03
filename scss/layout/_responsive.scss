@@ -1,0 +1,13 @@
+// scss/layout/_responsive.scss
+
+@use '../utils/variables' as v;
+
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}

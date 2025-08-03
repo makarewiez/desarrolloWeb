@@ -1,0 +1,20 @@
+@use '../utils/variables' as v;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: v.$font-body;
+  background-color: v.$background-color;
+  color: v.$text-color;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

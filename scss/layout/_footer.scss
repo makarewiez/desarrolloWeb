@@ -1,0 +1,63 @@
+@use '../utils/variables' as v;
+
+footer {
+  background-color: v.$footer-bg;
+  color: v.$text-color;
+  padding: 15px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 0.95rem;
+}
+
+footer section {
+  flex: 1 1 220px;
+  min-width: 200px;
+}
+
+footer h4 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: v.$text-color;
+}
+
+footer p,
+footer a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 5px 0;
+  color: v.$text-color;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.footer-copy img {
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+.footer-formulario form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.footer-formulario input[type="email"] {
+  padding: 6px 10px;
+  max-width: 240px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,27 @@
+// scss/components/_forms.scss
+
+@use '../utils/variables' as v;
+@use '../utils/mixins' as m;
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    @include m.button-style(v.$primary-color, v.$text-light);
+  }
+}

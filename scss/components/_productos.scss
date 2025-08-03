@@ -1,0 +1,17 @@
+// scss/components/_productos.scss
+
+@use '../utils/variables' as v;
+
+.catalogo-carousel {
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+
+    .card {
+      flex: 1;
+      max-width: 300px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+// Estilos específicos para index.html
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('../../assets/img/banner.jpg') center/cover no-repeat;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  @include mixins.responsive(md) {
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.section-destacados {
+  padding: 2rem 1rem;
+  background-color: variables.$bg-light;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: variables.$primary;
+  }
+
+  .carousel-item {
+    .card {
+      border: none;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+
+      img {
+        max-height: 200px;
+        object-fit: cover;
+      }
+
+      .card-body {
+        padding: 1rem;
+
+        h5 {
+          font-size: 1.2rem;
+          color: variables.$text-dark;
+        }
+
+        p {
+          color: variables.$text-light;
+        }
+      }
+    }
+  }
+}
